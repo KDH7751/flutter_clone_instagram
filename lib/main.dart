@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(color: Colors.black),
         )
       ),
-      initialBinding: InitBinding(),
+      initialBinding: InitBinding(), //최초 필요한 컨트롤러들을 묶고 인스턴스로 실행시켜 주는 역할.
       home: const Root(),
     );
   }
