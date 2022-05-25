@@ -37,8 +37,8 @@ class _SearchState extends State<Search> {
     return Row(
       children: [
         Expanded(
-          child: GestureDetector(
-            onTap: (){
+          child: GestureDetector( //클릭시 이벤트 발생시키기 위해서 감싸는 용도
+            onTap: (){ //눌렀을 때 searchfocus로 이동시켜 줌
               //Get.to(SearchFocus());
               Navigator.push(context, MaterialPageRoute(builder: (context)=>SearchFocus()));
             },

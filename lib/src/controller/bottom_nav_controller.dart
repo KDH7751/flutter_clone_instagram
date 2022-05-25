@@ -18,7 +18,7 @@ class BottomNavController extends GetxController {
 
   void changeBottomNav(int value, {bool hasGesture = true}) { //페이지 번호값을 변경시켜주는 역할, 디폴트값이 true
     //hasgesture가 true = 선택으로 페이지를 변경하는 방식. 스택이 쌓인다.
-    //hasgetture가 false = 뒤로 가기로 페이지를 변경하는 방식. 스택이 쌓이지 않게 한다.
+    //hasgesture가 false = 뒤로 가기로 페이지를 변경하는 방식. 스택이 쌓이지 않게 한다.
     var page = PageName.values[value]; //enum으로 정의한 페이지 이름과 페이지 번호를 연동
     switch (page) { //업로드의 경우 페이지 전환이 아니라 팝업이라서 이렇게 씀
       case PageName.UPLOAD:
